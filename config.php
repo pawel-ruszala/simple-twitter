@@ -1,8 +1,8 @@
 <?php
 
 $host = 'localhost';
-$user = '';
-$password = '';
+$user = 'root';
+$password = 'coderslab';
 $dbname = 'twitter_1';
 
 $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);

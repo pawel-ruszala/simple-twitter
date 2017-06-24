@@ -2,10 +2,10 @@
 require_once '../config.php';
 require_once '../src/class/User.php';
 require_once '../src/functions/login.php';
-require_once '../src/logout.php';
+require_once '../src/functions/signup.php';
 
 session_start();
-
+//var_dump($_POST);
 ?>
 
 <!doctype html>
@@ -21,8 +21,23 @@ session_start();
     </head>
     <body>
         <div>
-          <?php logout(); ?> 
-          <?php login(); ?>
+           
+          <?php 
+          
+          if($_SERVER['REQUEST_METHOD'] === "POST"){
+              switch ($_POST['button']){
+                  case 'login':
+                      login($conn);
+                      break;
+                  case 'signup':
+                      signup($conn);
+                      break;
+                  default :
+                      echo "Coś poszło nie tak";
+              }
+          }
+          
+          ?>
         </div>
     </body>
 </html>

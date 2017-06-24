@@ -2,17 +2,9 @@
 require_once '../config.php';
 require_once '../src/class/User.php';
 require_once "../src/class/Tweet.php";
+require_once "../src/functions/newTweet.php";
 session_start();
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
-      if(isset($_POST['tweet'])){
-        $newTweet = new Tweet();
-        $newTweet->setUserId($_SESSION['userId']);
-        $newTweet->setText($_POST['tweet']);
-        $newTweet->setCreationDate(date('Y-m-d H-i-s'));
-        $newTweet->saveToDB($conn);
-    }
-}
-
+newTweet($conn);
 ?>
 
 <!doctype html>

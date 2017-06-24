@@ -21,11 +21,11 @@ if ($conn->errorCode() != null) {
     </head>
     <body>
         <div>
-            <form method="POST">
+            <form action="login.php" method="POST">
                 <label>Email <input type="email" name="email" placeholder="email"></label><br>
                 <label>Password <input type = "password" name="password" placeholder="password"></label><br>
                 <label>Username <input type="username" name="username" placeholder="username"></label><br>
-                <button type="submit" value="SignUp">Sign up</button>
+                <button type="submit" name="button" value="signup">Sign up</button>
             </form>
         </div>
     </body>
