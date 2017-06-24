@@ -1,0 +1,9 @@
+#tweetBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f2f2f2;
+    border: 3px solid #0066ff;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    width: 500px;
+}

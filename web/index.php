@@ -17,12 +17,12 @@ require_once '../src/functions/logout.php';
         <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     </head>
     <body>
-        <div>
+        <div class="container">
             <p><?php logout(); ?></p>
-            <form action="login.php" method="POST">
-                <label>Your email <input type="text" name="email" placeholder="email"></label>
-                <label>Your password <input type="password" name="password" placeholder="password"></label><br>
-                <button type="submit" name="button" value="login">Log in</button>
+            <form action="login.php" method="POST" class="form-signin">
+                <label>Your email <input type="text" name="email" placeholder="email" class="form-control"></label>
+                <label>Your password <input type="password" name="password" placeholder="password" class="form-control"></label><br>
+                <button type="submit" name="button" value="login" class="btn btn-primary">Log in</button>
                 <a href="signup.php">Don't have an account? Sign up here!</a>
             </form>
         </div>

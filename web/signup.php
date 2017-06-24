@@ -20,12 +20,12 @@ if ($conn->errorCode() != null) {
         <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     </head>
     <body>
-        <div>
-            <form action="login.php" method="POST">
-                <label>Email <input type="email" name="email" placeholder="email"></label><br>
-                <label>Password <input type = "password" name="password" placeholder="password"></label><br>
-                <label>Username <input type="username" name="username" placeholder="username"></label><br>
-                <button type="submit" name="button" value="signup">Sign up</button>
+        <div class="container">
+            <form action="login.php" method="POST" class="form-signin">
+                <label>Email <input type="email" name="email" placeholder="email" class="form-control"></label><br>
+                <label>Password <input type = "password" name="password" placeholder="password" class="form-control"></label><br>
+                <label>Username <input type="username" name="username" placeholder="username" class="form-control"></label><br>
+                <button type="submit" name="button" value="signup" class="btn btn-primary">Sign up</button>
             </form>
         </div>
     </body>
