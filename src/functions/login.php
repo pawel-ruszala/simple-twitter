@@ -13,10 +13,10 @@ function login($conn)
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if (true == password_verify($password, $user['hash_pass'])) {
-            echo "<a href='mainPage.php'>Log in success. Go to main page.</a>";
+            echo "<a href='mainPage.php' class='login'>Log in success. Go to main page.</a>";
             $_SESSION['userId'] = $user['id'];
         } else {
-            echo "<a href='index.php'>Incorrect email or password. Go back to login page.</a>";
+            echo "<a href='index.php' class='login'>Incorrect email or password. Go back to login page.</a>";
         }
     }
 }

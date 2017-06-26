@@ -15,9 +15,10 @@ require_once '../src/functions/logout.php';
         <title>PHPipper</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
-        <div class="container">
+    <body class="index">
+        <div class="container contIndex">
             <p><?php logout(); ?></p>
             <form action="login.php" method="POST" class="form-signin">
                 <label>Your email <input type="text" name="email" placeholder="email" class="form-control"></label>

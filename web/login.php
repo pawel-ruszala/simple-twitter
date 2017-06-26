@@ -18,10 +18,11 @@ session_start();
         <title>PHPipper</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
-        <div>
-           
+    <body class="index">
+        <div class="container login">
+            <h1 class="login">
           <?php 
           
           if($_SERVER['REQUEST_METHOD'] === "POST"){
@@ -36,8 +37,8 @@ session_start();
                       echo "Coś poszło nie tak";
               }
           }
-          
           ?>
+          </h1>
         </div>
     </body>
 </html>

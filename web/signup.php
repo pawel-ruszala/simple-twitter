@@ -18,9 +18,10 @@ if ($conn->errorCode() != null) {
         <title>PHPipper - sign up</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
-        <div class="container">
+    <body class="index">
+        <div class="container contIndex">
             <form action="login.php" method="POST" class="form-signin">
                 <label>Email <input type="email" name="email" placeholder="email" class="form-control"></label><br>
                 <label>Password <input type = "password" name="password" placeholder="password" class="form-control"></label><br>

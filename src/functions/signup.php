@@ -21,10 +21,8 @@ function signup ($conn)
             $newUser->setHashPass($password);
             $newUser->setUsername($username);
             $newUser->saveToDB($conn);
-            var_dump($newUser);
             $_SESSION['userId'] = $newUser->getId();
-            var_dump($_SESSION);
-            echo "<a href='mainPage.php'>Pomyślnie założono konto. Kliknij aby przejść do strony głownej.<a>";
+            echo "<a href='mainPage.php' class='login'>Pomyślnie założono konto. Kliknij aby przejść do strony głownej.<a>";
     }
         
     }
