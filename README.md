@@ -1,6 +1,6 @@
 # Simple Twitter
 
-Hello, it's my bootscamp's workshop project unfinished yet.
+Hello, it's my bootscamp's workshop project unfinished yet.<br/>
 For now there are only:
 * register/loign
 * create new tweet
